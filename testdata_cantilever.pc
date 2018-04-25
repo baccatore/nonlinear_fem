@@ -1,0 +1,381 @@
+INPUTVERSION     2016
+ANALYSIS         EXPLICIT    
+SOLVER           CRASH   
+UNIT             M        KG       S        KELVIN  
+TITLE /  cuntilever.pc                                                          
+OCTRL /  
+ TIME_HISTORY                 INTERVAL 0.05
+ CONTOUR_PLOT                 INTERVAL 0.05
+END_OCTRL
+RUNEND/  
+ TIME                         0.
+END_RUNEND
+$#         IDNOD               X               Y               Z
+NODE  /        1              0.              0.              0.
+NODE  /        2            250.              0.              0.
+NODE  /        3            250.             50.              0.
+NODE  /        4              0.             50.              0.
+NODE  /        5              0.             50.              0.
+NODE  /        6              0.             40.              0.
+NODE  /        7             10.             40.              0.
+NODE  /        8             10.             50.              0.
+NODE  /        9              0.             30.              0.
+NODE  /       10             10.             30.              0.
+NODE  /       11              0.             20.              0.
+NODE  /       12             10.             20.              0.
+NODE  /       13              0.             10.              0.
+NODE  /       14             10.             10.              0.
+NODE  /       15              0.              0.              0.
+NODE  /       16             10.              0.              0.
+NODE  /       17             20.             40.              0.
+NODE  /       18             20.             50.              0.
+NODE  /       19             20.             30.              0.
+NODE  /       20             20.             20.              0.
+NODE  /       21             20.             10.              0.
+NODE  /       22             20.              0.              0.
+NODE  /       23             30.             40.              0.
+NODE  /       24             30.             50.              0.
+NODE  /       25             30.             30.              0.
+NODE  /       26             30.             20.              0.
+NODE  /       27             30.             10.              0.
+NODE  /       28             30.              0.              0.
+NODE  /       29             40.             40.              0.
+NODE  /       30             40.             50.              0.
+NODE  /       31             40.             30.              0.
+NODE  /       32             40.             20.              0.
+NODE  /       33             40.             10.              0.
+NODE  /       34             40.              0.              0.
+NODE  /       35             50.             40.              0.
+NODE  /       36             50.             50.              0.
+NODE  /       37             50.             30.              0.
+NODE  /       38             50.             20.              0.
+NODE  /       39             50.             10.              0.
+NODE  /       40             50.              0.              0.
+NODE  /       41             60.             40.              0.
+NODE  /       42             60.             50.              0.
+NODE  /       43             60.             30.              0.
+NODE  /       44             60.             20.              0.
+NODE  /       45             60.             10.              0.
+NODE  /       46             60.              0.              0.
+NODE  /       47             70.             40.              0.
+NODE  /       48             70.             50.              0.
+NODE  /       49             70.             30.              0.
+NODE  /       50             70.             20.              0.
+NODE  /       51             70.             10.              0.
+NODE  /       52             70.              0.              0.
+NODE  /       53             80.             40.              0.
+NODE  /       54             80.             50.              0.
+NODE  /       55             80.             30.              0.
+NODE  /       56             80.             20.              0.
+NODE  /       57             80.             10.              0.
+NODE  /       58             80.              0.              0.
+NODE  /       59             90.             40.              0.
+NODE  /       60             90.             50.              0.
+NODE  /       61             90.             30.              0.
+NODE  /       62             90.             20.              0.
+NODE  /       63             90.             10.              0.
+NODE  /       64             90.              0.              0.
+NODE  /       65            100.             40.              0.
+NODE  /       66            100.             50.              0.
+NODE  /       67            100.             30.              0.
+NODE  /       68            100.             20.              0.
+NODE  /       69            100.             10.              0.
+NODE  /       70            100.              0.              0.
+NODE  /       71            110.             40.              0.
+NODE  /       72            110.             50.              0.
+NODE  /       73            110.             30.              0.
+NODE  /       74            110.             20.              0.
+NODE  /       75            110.             10.              0.
+NODE  /       76            110.              0.              0.
+NODE  /       77            120.             40.              0.
+NODE  /       78            120.             50.              0.
+NODE  /       79            120.             30.              0.
+NODE  /       80            120.             20.              0.
+NODE  /       81            120.             10.              0.
+NODE  /       82            120.              0.              0.
+NODE  /       83            130.             40.              0.
+NODE  /       84            130.             50.              0.
+NODE  /       85            130.             30.              0.
+NODE  /       86            130.             20.              0.
+NODE  /       87            130.             10.              0.
+NODE  /       88            130.              0.              0.
+NODE  /       89            140.             40.              0.
+NODE  /       90            140.             50.              0.
+NODE  /       91            140.             30.              0.
+NODE  /       92            140.             20.              0.
+NODE  /       93            140.             10.              0.
+NODE  /       94            140.              0.              0.
+NODE  /       95            150.             40.              0.
+NODE  /       96            150.             50.              0.
+NODE  /       97            150.             30.              0.
+NODE  /       98            150.             20.              0.
+NODE  /       99            150.             10.              0.
+NODE  /      100            150.              0.              0.
+NODE  /      101            160.             40.              0.
+NODE  /      102            160.             50.              0.
+NODE  /      103            160.             30.              0.
+NODE  /      104            160.             20.              0.
+NODE  /      105            160.             10.              0.
+NODE  /      106            160.              0.              0.
+NODE  /      107            170.             40.              0.
+NODE  /      108            170.             50.              0.
+NODE  /      109            170.             30.              0.
+NODE  /      110            170.             20.              0.
+NODE  /      111            170.             10.              0.
+NODE  /      112            170.              0.              0.
+NODE  /      113            180.             40.              0.
+NODE  /      114            180.             50.              0.
+NODE  /      115            180.             30.              0.
+NODE  /      116            180.             20.              0.
+NODE  /      117            180.             10.              0.
+NODE  /      118            180.              0.              0.
+NODE  /      119            190.             40.              0.
+NODE  /      120            190.             50.              0.
+NODE  /      121            190.             30.              0.
+NODE  /      122            190.             20.              0.
+NODE  /      123            190.             10.              0.
+NODE  /      124            190.              0.              0.
+NODE  /      125            200.             40.              0.
+NODE  /      126            200.             50.              0.
+NODE  /      127            200.             30.              0.
+NODE  /      128            200.             20.              0.
+NODE  /      129            200.             10.              0.
+NODE  /      130            200.              0.              0.
+NODE  /      131            210.             40.              0.
+NODE  /      132            210.             50.              0.
+NODE  /      133            210.             30.              0.
+NODE  /      134            210.             20.              0.
+NODE  /      135            210.             10.              0.
+NODE  /      136            210.              0.              0.
+NODE  /      137            220.             40.              0.
+NODE  /      138            220.             50.              0.
+NODE  /      139            220.             30.              0.
+NODE  /      140            220.             20.              0.
+NODE  /      141            220.             10.              0.
+NODE  /      142            220.              0.              0.
+NODE  /      143            230.             40.              0.
+NODE  /      144            230.             50.              0.
+NODE  /      145            230.             30.              0.
+NODE  /      146            230.             20.              0.
+NODE  /      147            230.             10.              0.
+NODE  /      148            230.              0.              0.
+NODE  /      149            240.             40.              0.
+NODE  /      150            240.             50.              0.
+NODE  /      151            240.             30.              0.
+NODE  /      152            240.             20.              0.
+NODE  /      153            240.             10.              0.
+NODE  /      154            240.              0.              0.
+NODE  /      155            250.             40.              0.
+NODE  /      156            250.             50.              0.
+NODE  /      157            250.             30.              0.
+NODE  /      158            250.             20.              0.
+NODE  /      159            250.             10.              0.
+NODE  /      160            250.              0.              0.
+$#          IDEL   IDPRT  IDNOD1  IDNOD2  IDNOD3  IDNOD4
+SHELL /        1       1       5       6       7       8
+SHELL /        2       1       6       9      10       7
+SHELL /        3       1       9      11      12      10
+SHELL /        4       1      11      13      14      12
+SHELL /        5       1      13      15      16      14
+SHELL /        6       1       8       7      17      18
+SHELL /        7       1       7      10      19      17
+SHELL /        8       1      10      12      20      19
+SHELL /        9       1      12      14      21      20
+SHELL /       10       1      14      16      22      21
+SHELL /       11       1      18      17      23      24
+SHELL /       12       1      17      19      25      23
+SHELL /       13       1      19      20      26      25
+SHELL /       14       1      20      21      27      26
+SHELL /       15       1      21      22      28      27
+SHELL /       16       1      24      23      29      30
+SHELL /       17       1      23      25      31      29
+SHELL /       18       1      25      26      32      31
+SHELL /       19       1      26      27      33      32
+SHELL /       20       1      27      28      34      33
+SHELL /       21       1      30      29      35      36
+SHELL /       22       1      29      31      37      35
+SHELL /       23       1      31      32      38      37
+SHELL /       24       1      32      33      39      38
+SHELL /       25       1      33      34      40      39
+SHELL /       26       1      36      35      41      42
+SHELL /       27       1      35      37      43      41
+SHELL /       28       1      37      38      44      43
+SHELL /       29       1      38      39      45      44
+SHELL /       30       1      39      40      46      45
+SHELL /       31       1      42      41      47      48
+SHELL /       32       1      41      43      49      47
+SHELL /       33       1      43      44      50      49
+SHELL /       34       1      44      45      51      50
+SHELL /       35       1      45      46      52      51
+SHELL /       36       1      48      47      53      54
+SHELL /       37       1      47      49      55      53
+SHELL /       38       1      49      50      56      55
+SHELL /       39       1      50      51      57      56
+SHELL /       40       1      51      52      58      57
+SHELL /       41       1      54      53      59      60
+SHELL /       42       1      53      55      61      59
+SHELL /       43       1      55      56      62      61
+SHELL /       44       1      56      57      63      62
+SHELL /       45       1      57      58      64      63
+SHELL /       46       1      60      59      65      66
+SHELL /       47       1      59      61      67      65
+SHELL /       48       1      61      62      68      67
+SHELL /       49       1      62      63      69      68
+SHELL /       50       1      63      64      70      69
+SHELL /       51       1      66      65      71      72
+SHELL /       52       1      65      67      73      71
+SHELL /       53       1      67      68      74      73
+SHELL /       54       1      68      69      75      74
+SHELL /       55       1      69      70      76      75
+SHELL /       56       1      72      71      77      78
+SHELL /       57       1      71      73      79      77
+SHELL /       58       1      73      74      80      79
+SHELL /       59       1      74      75      81      80
+SHELL /       60       1      75      76      82      81
+SHELL /       61       1      78      77      83      84
+SHELL /       62       1      77      79      85      83
+SHELL /       63       1      79      80      86      85
+SHELL /       64       1      80      81      87      86
+SHELL /       65       1      81      82      88      87
+SHELL /       66       1      84      83      89      90
+SHELL /       67       1      83      85      91      89
+SHELL /       68       1      85      86      92      91
+SHELL /       69       1      86      87      93      92
+SHELL /       70       1      87      88      94      93
+SHELL /       71       1      90      89      95      96
+SHELL /       72       1      89      91      97      95
+SHELL /       73       1      91      92      98      97
+SHELL /       74       1      92      93      99      98
+SHELL /       75       1      93      94     100      99
+SHELL /       76       1      96      95     101     102
+SHELL /       77       1      95      97     103     101
+SHELL /       78       1      97      98     104     103
+SHELL /       79       1      98      99     105     104
+SHELL /       80       1      99     100     106     105
+SHELL /       81       1     102     101     107     108
+SHELL /       82       1     101     103     109     107
+SHELL /       83       1     103     104     110     109
+SHELL /       84       1     104     105     111     110
+SHELL /       85       1     105     106     112     111
+SHELL /       86       1     108     107     113     114
+SHELL /       87       1     107     109     115     113
+SHELL /       88       1     109     110     116     115
+SHELL /       89       1     110     111     117     116
+SHELL /       90       1     111     112     118     117
+SHELL /       91       1     114     113     119     120
+SHELL /       92       1     113     115     121     119
+SHELL /       93       1     115     116     122     121
+SHELL /       94       1     116     117     123     122
+SHELL /       95       1     117     118     124     123
+SHELL /       96       1     120     119     125     126
+SHELL /       97       1     119     121     127     125
+SHELL /       98       1     121     122     128     127
+SHELL /       99       1     122     123     129     128
+SHELL /      100       1     123     124     130     129
+SHELL /      101       1     126     125     131     132
+SHELL /      102       1     125     127     133     131
+SHELL /      103       1     127     128     134     133
+SHELL /      104       1     128     129     135     134
+SHELL /      105       1     129     130     136     135
+SHELL /      106       1     132     131     137     138
+SHELL /      107       1     131     133     139     137
+SHELL /      108       1     133     134     140     139
+SHELL /      109       1     134     135     141     140
+SHELL /      110       1     135     136     142     141
+SHELL /      111       1     138     137     143     144
+SHELL /      112       1     137     139     145     143
+SHELL /      113       1     139     140     146     145
+SHELL /      114       1     140     141     147     146
+SHELL /      115       1     141     142     148     147
+SHELL /      116       1     144     143     149     150
+SHELL /      117       1     143     145     151     149
+SHELL /      118       1     145     146     152     151
+SHELL /      119       1     146     147     153     152
+SHELL /      120       1     147     148     154     153
+SHELL /      121       1     150     149     155     156
+SHELL /      122       1     149     151     157     155
+SHELL /      123       1     151     152     158     157
+SHELL /      124       1     152     153     159     158
+SHELL /      125       1     153     154     160     159
+$#         IDPRT   ATYPE   IDMAT IDVAMAT IDTHMAT  IDPMAT
+PART  /        1   SHELL       1       0       0       0
+$#                                                                         TITLE
+NAME PART_1                                                                     
+$#  DTELIM    TSCALF
+                    
+$#   TCONT    EPSINI  COULFRIC
+                              
+$#       H NINT    OFFSETNTDOF
+        2.    5               
+$#ORTBLANK      XDIR      YDIR      ZDIR
+    0                                   
+$#      
+END_PART
+$#         IDNOD  XYZUVW    IFRA   ISENS
+BOUNC /        0  111111       0       0
+$#                                                                         TITLE
+NAME fixed end                                                                  
+        NOD        5        6        9       11       13       15
+        END
+$#         IDNOD  XYZUVW    IFRA   ISENS
+BOUNC /        0  001000       0       0
+$#                                                                         TITLE
+NAME pseudo 2d                                                                  
+        NOD       16:160        7        8       10       12
+        NOD       14
+        END
+$#         IDNOD    IDIR    LCUR    SFAC    IFRA   ISENS  ILDTYP           CLOAD
+CONLO /        0       2       1     -1.       0       0       1                
+$#                                                                         TITLE
+NAME load 5kN per node                                                          
+        NOD      155      156      157      158      159      160
+        END
+$#         IDFUN  FUNTYP   SCALX   SCALY  SHIFTX  SHIFTY IFLMEAS   ICOMP
+FUNCT /        1       3      1.      1.      0.      0.       0       0
+$#                                                                         TITLE
+NAME NewCurve1                                                                  
+$#                             X               Y
+                              0.              0.
+                              5.              5.
+                             10.              5.
+$---5---10----5---20----5---30----5---40----5---50----5---60----5---70----5---80
+$#         IDMAT   MATYP             RHO   ISINT    ISHG  ISTRAT   IFROZ
+MATER /        1     101          7.8E-6       0       0                
+$# BLANK                                                     QVM           IDMPD
+                                                              1.               0
+$#                                                                         TITLE
+NAME 1=>mat101                                                                  
+$#       E     BLANK        NU     ALPHA       HGM       HGW       HGQ        As
+      210.                 0.3                                                  
+
+
+
+$#                                                     BLANK       KSI        Fo
+                                                                    0.        0.
+
+$---5---10----5---20----5---30----5---40----5---50----5---60----5---70----5---80
+$#         IDMAT   MATYP             RHO   ISINT    ISHG  ISTRAT   IFROZ
+MATER /        2     100              0.       0       0                
+$# BLANK                                                     QVM           IDMPD
+                                                              1.               0
+$#                                                                         TITLE
+NAME 2=>mat100                                                                  
+$#       E     BLANK        NU     BLANK
+        0.                  0.          
+
+
+
+
+
+$#         IDNOD  ISTMOD
+THNOD /        0        
+$#                                                                         TITLE
+NAME Corner                                                                     
+        NOD      160
+        END
+$#          IDEL
+THELE /        0
+$#                                                                         TITLE
+NAME Middle                                                                     
+        ELE       30
+        END

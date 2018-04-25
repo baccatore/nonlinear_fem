@@ -1,0 +1,31 @@
+$#         IDNOD               X               Y               Z
+$#          IDEL   IDPRT  IDNOD1  IDNOD2  IDNOD3  IDNOD4
+$#         IDPRT   ATYPE   IDMAT IDVAMAT IDTHMAT  IDPMAT
+$#                                                                         TITLE
+$#  DTELIM    TSCALF
+$#   TCONT    EPSINI  COULFRIC
+$#       H NINT    OFFSETNTDOF
+$#ORTBLANK      XDIR      YDIR      ZDIR
+$#      
+$#         IDNOD  XYZUVW    IFRA   ISENS
+$#                                                                         TITLE
+$#         IDNOD  XYZUVW    IFRA   ISENS
+$#                                                                         TITLE
+$#         IDNOD    IDIR    LCUR    SFAC    IFRA   ISENS  ILDTYP           CLOAD
+$#                                                                         TITLE
+$#         IDFUN  FUNTYP   SCALX   SCALY  SHIFTX  SHIFTY IFLMEAS   ICOMP
+$#                                                                         TITLE
+$#                             X               Y
+$#         IDMAT   MATYP             RHO   ISINT    ISHG  ISTRAT   IFROZ
+$# BLANK                                                     QVM           IDMPD
+$#                                                                         TITLE
+$#       E     BLANK        NU     ALPHA       HGM       HGW       HGQ        As
+$#                                                     BLANK       KSI        Fo
+$#         IDMAT   MATYP             RHO   ISINT    ISHG  ISTRAT   IFROZ
+$# BLANK                                                     QVM           IDMPD
+$#                                                                         TITLE
+$#       E     BLANK        NU     BLANK
+$#         IDNOD  ISTMOD
+$#                                                                         TITLE
+$#          IDEL
+$#                                                                         TITLE
