@@ -1,19 +1,14 @@
-
-RHO = 1.0  #Mass density
-D_T  = .01  #Time step
-C   = .5   #Attenuate coefficient
-
+import config as cfg
 
 def h1():
-    global RHO, D_T, C
-    return (RHO/D_T**2) + C/(2*D_T)
-
+    return (cfg.RHO/cfg.D_T**2) + cfg.C/(2*cfg.D_T)
 
 def h2():
-    global RHO, D_T
-    return -2*RHO/(D_T**2) 
-
+    return -2*cfg.RHO/(cfg.D_T**2) 
 
 def h3():
-    global RHO, D_T
-    return (RHO/D_T**2) - C/(2*D_T)
+    return (cfg.RHO/cfg.D_T**2) - cfg.C/(2*cfg.D_T)
+
+cfg.h1 = h1()
+cfg.h2 = h2()
+cfg.h3 = h3()

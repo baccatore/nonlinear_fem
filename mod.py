@@ -8,6 +8,7 @@
 # smaller files
 #************************************************************
 import itertools
+import numpy as np
 import numpy.linalg as LA
 
 import config as cfg
@@ -25,7 +26,7 @@ def kron_delta(i, j):
 
 
 def zero_matrix(i,j):
-    a = np.zeros([i,j],dtype=np.float128)
+    a = np.zeros([i,j],dtype=np.float64)
     a = np.matrix(a)
     return a
     
@@ -88,49 +89,39 @@ def b_matrix(i_element, node, x, e):
     b_m = zero_matrix(3,8)
 
     #Nodal index which consist of the element
-    i, j, k, l = node[:,i_element] -1
+    i = node[i_element,1:5] - 1
     xi  = zero_matrix(2,4)
-    xi  = np.matri([x[:,i], x[:,j], x[:,k], x[:,l]]) 
-    print(xi)
+    xi  = np.matrix([x[i[0],0:2], #FIXME not easy to udnerstatnd
+        x[i[1],0:2],
+        x[i[2],0:2],
+        x[i[3],0:2]])
 
     #dN/da, dN/db
+    #XXX can be more abstractive?
     dNi_dai = zero_matrix(2,4)
-    #dNi_db = np.zeros([4], dtype=np.float128)
-    dNi_dai[0,0] = -0.25*(1.0-b)
-    dNi_dai[0,1] =  0.25*(1.0-b)
-    dNi_dai[0,2] =  0.25*(1.0+b)
-    dNi_dai[0,3] = -0.25*(1.0+b)
-    dNi_dai[1,0] = -0.25*(1.0-a)
-    dNi_dai[1,1] = -0.25*(1.0+a)
-    dNi_dai[1,2] =  0.25*(1.0+a)
-    dNi_dai[1,3] =  0.25*(1.0-a)
+    dNi_dai[0,0] = -0.25*(1.0-e[1])
+    dNi_dai[0,1] =  0.25*(1.0-e[1])
+    dNi_dai[0,2] =  0.25*(1.0+e[1])
+    dNi_dai[0,3] = -0.25*(1.0+e[1])
+    dNi_dai[1,0] = -0.25*(1.0-e[0])
+    dNi_dai[1,1] = -0.25*(1.0+e[0])
+    dNi_dai[1,2] =  0.25*(1.0+e[0])
+    dNi_dai[1,3] =  0.25*(1.0-e[0])
     
-    #Inverse of Jaconbi matrix 
-    j_m = zero_matirx(2,2)
-    #FIXME Can be written more more easily?
-    #Write down elements, can be ortho production
-    #for i in range(4): #Nb of node in one element
-    #    j_m[0,0] += dNi_dai[0,i]*x[0,i]
-    #    j_m[0,1] += dNi_dai[0,i]*x[1,i]
-    #    j_m[1,0] += dNi_dai[1,i]*x[0,i]
-    #    j_m[1,1] += dNi_dai[1.i]*x[1,i]
-    j_m = dNi_dai * x.T
-    # inverse J
-    j_m = j_m.I
-    print(j_m)   #XXX Validation
+    #Jaconbi matrix 
+    j_m = zero_matrix(2,2)
+    j_m = dNi_dai * xi
     
     #[dN/dx] = [J] * [dN/da]
     dNi_dxi = zero_matrix(2,4)
-    dNi_dxi = j_m * dNi_dai
+    dNi_dxi = j_m.I * dNi_dai
 
-    #[B]=[dN/dx][dN/dy]
-    #Can be written shorter with NumPy!
-    #for i,j in simple_product(2, 4):
-    for i in range(4)
-        bm[0,i*2  ]= dNi_dxi[0,i    ] 
-        bm[1,i*2+1]= dNi_dxi[1,i*2+1] 
-        bm[2,i*2  ]= dNi_dxi[1,i    ]
-        bm[2,i*2+1]= dNi_dxi[0,i*2+1]
+    #[B] = [dN/dx][dN/dy]
+    for i in range(4):
+        b_m[0,i*2  ]= dNi_dxi[0,i] 
+        b_m[1,i*2+1]= dNi_dxi[1,i] 
+        b_m[2,i*2  ]= dNi_dxi[1,i]
+        b_m[2,i*2+1]= dNi_dxi[0,i]
     return b_m
 
 

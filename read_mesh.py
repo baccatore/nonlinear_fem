@@ -6,14 +6,10 @@
 # Read mesh data saved as .pc 
 #************************************************************
 import re
-
-
-if 'shell' 'node' not in globals():
-    node = []
-    shell = []
+import numpy as np
 
 def read_mesh():
-    global node, mesh
+    node, shell = [], []
     with open("node.dat", "r") as data:
         for line in data:
             node.append([float(x) for x in line.split()]) #Implicitly splits by space
@@ -22,6 +18,7 @@ def read_mesh():
         for line in data:
             shell.append([int(x) for x in line.split()]) #Implicitly splits by space
     
+    node = np.array(node); shell = np.array(shell)
     return (node, shell)
 
 if __name__ == "__main__":
